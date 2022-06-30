@@ -1,0 +1,32 @@
+server:
+  port: 19022
+spring:
+  application:
+    name: coho-io
+  profiles:
+    active: localdev
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  datasource:
+    url: jdbc:mysql://localhost:3306/tools-io?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+mybatis-plus:
+  global-config:
+    db-config:
+#      logic-delete-field: isDeleted # 全局逻辑删除的实体字段名
+      logic-delete-value: 1 # 逻辑已删除值(默认为 1)
+      logic-not-delete-value: 0 # 逻辑未删除值(默认为 0)
+      update-strategy: ignored #忽略非空判断，null和""都不过滤
+logback:
+  path: ./logs
+
+ok:
+  http:
+    connect-timeout: 10
+    keep-alive-duration: 300
+    max-idle-connections: 200
+    read-timeout: 30
+    write-timeout: 30

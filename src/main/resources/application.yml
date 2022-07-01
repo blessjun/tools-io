@@ -2,7 +2,7 @@ server:
   port: 19022
 spring:
   application:
-    name: coho-io
+    name: tools-io
   profiles:
     active: localdev
   mvc:

@@ -8,10 +8,10 @@
         <version>2.6.7</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>cn.com.coho.tools</groupId>
-    <artifactId>coho-io</artifactId>
+    <groupId>com.sunfujun</groupId>
+    <artifactId>tools-io</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>coho-io</name>
+    <name>tools-io</name>
     <description>Demo project for Spring Boot</description>
     <properties>
         <java.version>1.8</java.version>

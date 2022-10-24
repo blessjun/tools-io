@@ -28,11 +28,7 @@ public class GroovyScriptEngine implements BeanPostProcessor {
 
 
         public List<String> getBindingInterface() {
-
-
             return this.bindingInterface;
-
-
         }
 
 
@@ -158,6 +154,7 @@ public class GroovyScriptEngine implements BeanPostProcessor {
         }
 
 
+        @Override
         public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
 
 
@@ -209,7 +206,7 @@ public class GroovyScriptEngine implements BeanPostProcessor {
                 boolean isImpl = BeanGroovyUtils.isInherit(bean.getClass(), clazz);
 
 
-                if (isImpl && isImpl) {
+                if (isImpl) {
 
 
                     this.binding.setProperty(beanName, bean);
@@ -227,6 +224,7 @@ public class GroovyScriptEngine implements BeanPostProcessor {
         }
 
 
+        @Override
         public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
 
 

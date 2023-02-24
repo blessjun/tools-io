@@ -75,7 +75,8 @@ public class InterfaceCall {
     }
 
     //是否要下一次调用
-    private boolean isNextCall(InterfaceCallRequest request, List<SysInterfaceLog> interfaceLogs, SysInterfaceLog interfaceLog) {
+    private boolean
+    isNextCall(InterfaceCallRequest request, List<SysInterfaceLog> interfaceLogs, SysInterfaceLog interfaceLog) {
         //获取每页数量
         boolean isNext = true;
         if (!interfaceLog.getIsSuccess()) { //如果调用失败

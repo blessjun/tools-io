@@ -68,7 +68,7 @@ public class InterfaceCall {
             flag = false;
             e.printStackTrace(); //处理日志
             return new InterfaceResult(flag, interfaceLogs);
-        } while (flag && index < 10_000);//最多调用万次
+        } while (flag && index < 10000);//最多调用万次
 
         return new InterfaceResult(true, interfaceLogs);
 
